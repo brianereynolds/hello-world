@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Bootstrap class for Spring Boot
  *
- * @author Brian.e.reynolds@outlook.com
+ * @author brian.e.reynolds@outlook.com
  */
 @SpringBootApplication
 public class Application {
