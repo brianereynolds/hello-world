@@ -1,0 +1,33 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.6.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = javacompatibility
+targetCompatibility = javacompatibility
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web-services')
+    compile('org.springframework.boot:spring-boot-starter-amqp')
+    compile('org.springframework.boot:spring-boot-starter-aop')
+    compile('io.springfox:springfox-swagger2:2.4.0')
+    // OWASP
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    // Mockito
+    // PowerMock
+}
